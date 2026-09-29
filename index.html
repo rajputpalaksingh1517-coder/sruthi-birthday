@@ -155,13 +155,28 @@
     line-height: 1.8;
 }
 
+.birthday-letter {
+  position: relative;
+  overflow: hidden;
+}
+
+.birthday-letter::before {
+  content: "💗";
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 28px;
+  opacity: 0.6;
+}
+        
 .birthday-letter h2 {
     color: #d63384;
     margin-bottom: 15px;
+    front-size:24px;
 }
 
 .birthday-letter p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .birthday-letter .signature {
@@ -169,6 +184,8 @@
     font-weight: bold;
     color: #d63384;
     font-size: 17px;
+    font-style: italic;
+letter-spacing: 0.5px;
 }
 
 .photo-gallery {
