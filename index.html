@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Sssssssruthiii 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #ffd6e7,
+                #ffeaf3,
+                #e8d9ff
+            );
+
+            color: #4a3040;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            padding: 50px 25px;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            margin-bottom: 35px;
+        }
+
+        button {
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+
+            background: #ff6fa5;
+            color: white;
+
+            font-size: 18px;
+            cursor: pointer;
+
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+            background: #ff4f91;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+.love-section {
+    margin-top: 50px;
+}
+
+.love-section h2 {
+    margin-bottom: 30px;
+}
+
+.love-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.love-card {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px 15px;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.love-card:hover {
+    transform: translateY(-8px);
+}
+
+.love-card .emoji {
+    font-size: 45px;
+}
+
+.love-card h3 {
+    margin: 12px 0 8px;
+}
+
+.love-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.sruthi-photo {
+    display:block;
+    width:300px;
+    height:auto;
+    margin:20px auto;
+    border-radius:15px;
+}
+   
+   .special-photo img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.birthday-letter {
+    max-width: 500px;
+    margin: 35px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+    border: 1px solid #ffc4d6;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(255, 105, 150, 0.15);
+    text-align: center;
+    color: #704052;
+    line-height: 1.8;
+}
+
+.birthday-letter h2 {
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.birthday-letter p {
+    font-size: 15px;
+}
+
+.birthday-letter .signature {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #d63384;
+    font-size: 17px;
+}
+
+.photo-gallery {
+    margin: 30px 0;
+}
+
+.photo-gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+#passwordScreen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ffd6e7, #ffeaf3, #e8d9ff);
+    z-index: 9999;
+    padding: 20px;
+}
+
+#passwordScreen h2 {
+    color: #a43040;
+    margin-bottom: 10px;
+}
+
+#passwordScreen p {
+    color: #6b5260;
+}
+
+#passwordInput {
+    width: 250px;
+    padding: 12px;
+    border: 2px solid #f3a6c8;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#passwordScreen button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #e88ac0;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#passwordError {
+    color: #d9536f;
+    margin-top: 10px;
+}
+   </style>
+</head>
+
+<body>
+
+    <div id="passwordScreen">
+    <h2>🔐 A Little Surprise For You 💗</h2>
+    <p>Enter the secret password to open it ✨</p>
+
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="checkPassword()">Unlock 💕</button>
+
+    <p id="passwordError"></p>
+</div>
+
+    <div class="container">
+
+        <div class="heart">💗</div>
+
+        <h1>
+            Happy Birthday,<br>
+            Sssssssruthiii! 🎂
+        </h1>
+
+        <p class="subtitle">
+            Someone made a little something just for you... ✨
+        </p>
+
+<button id="surpriseBtn">
+    Open your surprise 🎀
+</button>
+
+<div id="surprise" style="display: none;">
+
+<div class="photo-gallery">
+    <h2>A Little Gallery For You 📸💗</h2>
+
+    <div class="gallery">
+        <img src="./photos/sruthi.1.jpg" alt="Sruthi">
+        <img src="./photos/sruthi.2.jpg" alt="Sruthi">
+        <img src="./photos/sruthi.3.jpg" alt="Sruthi">
+        <img src="./photos/sruthi.4.jpg" alt="Sruthi">
+        <img src="./photos/sruthi.5.jpg" alt="Sruthi">
+        <img src="./photos/sruthi.6.jpg" alt="Sruthi">
+    </div>
+</div>
+
+    <h2>Welcome to your little world, Sssssssruthiii 💗</h2>
+
+    <p>
+        This tiny corner of the internet was made especially for you.
+    </p>
+
+    <p>
+        Because you deserve a little something special on your birthday. 🎀
+    </p>
+    
+    <div class="love-section">
+<div class="special-photo">
+    <img src="./photos/sruthi.7.jpg" alt="Sruthi">
+</div>
+
+    <h2>Things that make Sruthi... Sruthi 💗</h2>
+
+    <div class="love-grid">
+
+        <div class="love-card">
+            <div class="emoji">😴</div>
+            <h3>Sleeping</h3>
+            <p>Because apparently sleep is a full-time hobby. 😂</p>
+        </div>
+
+        <div class="love-card">
+            <div class="emoji">🎬</div>
+            <h3>Movies</h3>
+            <p>A good movie and she's officially unavailable. 🍿</p>
+        </div>
+
+        <div class="love-card">
+            <div class="emoji">💃</div>
+            <h3>Dancing</h3>
+            <p>Music starts and Sruthi mode activates. ✨</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="birthday-letter">
+    <h2>A Little Letter For You 💌</h2>
+
+    <p>
+        Happiest Birthday, Sruthi! 🎂💕
+    </p>
+
+    <p>
+        I hope your special day is filled with
+        happiness, laughter, beautiful memories
+        and everything your heart wishes for.
+    </p>
+
+    <p>
+        I'm really glad our paths crossed.
+        Your little habits, your smile and
+        the moments we share make our friendship
+        something I truly cherish.
+    </p>
+
+    <p>
+        Keep smiling, keep dancing, keep sleeping, keep being
+        your wonderful self. Never stop being you! 🌷
+    </p>
+
+    <p class="signature">
+        With lots of love and best wishes, <br>
+        Palak 💗
+    </p>
+</div>
+</div>
+
+<button id="finalBtn" style="display: none;">One More Thing... 💗</button>
+
+<div id="finalMessage" style="display: none;">
+    <h2>And one last thing... 💌</h2>
+    <p>
+        No matter where life takes you, I hope you always keep that
+        beautiful smile of yours. 🫶
+    </p>
+    <p>
+        Happy Birthday once again, Sruthi! ❤️
+    </p>
+</div>
+</div>
+    <script>
+    document.getElementById("surpriseBtn").onclick = function() {
+        document.getElementById("surprise").style.display = "block";
+        document.getElementById("finalBtn").style.display="inline-block";
+    };
+
+    document.getElementById("finalBtn").onclick = function() {
+    document.getElementById("finalMessage").style.display = "block";
+};
+
+function checkPassword() {
+    const password = document.getElementById("passwordInput").value;
+    const correctPassword = "06112008"; // change this to your secret password
+
+    if (password === correctPassword) {
+        document.getElementById("passwordScreen").style.display = "none";
+    } else {
+        document.getElementById("passwordError").textContent =
+            "Wrong password 💔 Try again!";
+    }
+}
+</script>
+
+</body>
+
+</html>
